@@ -4,7 +4,9 @@ import youtube_dl
 from datetime import datetime
 
 def get_op(start=40):
-    ytd_op = {'format': 'mp4',
+    ytd_op = {
+        'verbose': True,
+        'format': 'mp4',
         "default_search": "ytsearch",
         "quite": "True",
         'options': f'-vn -ss {start}'
