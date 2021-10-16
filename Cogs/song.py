@@ -64,7 +64,7 @@ class Song(commands.Cog):
         await ctx.send(embed=vid.get_embed('Added Song'))
         if not guild.now_playing :
             self.play_song(voice,str(ctx.guild.id))
-        else:
+        elif guild.voice_client.is_paused():
             await ctx.send('Resuming Paused Audio')
             ctx.guild.voice_client.resume()
 
