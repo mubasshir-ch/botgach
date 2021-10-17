@@ -9,7 +9,6 @@ def get_op(start=40):
         'format': 'mp4',
         'default_search': 'ytsearch',
         'quite': 'True',
-        'extract_flat': 'in_playlist',
         'options': f'-vn -ss {start}'
     }
     return ytd_op
