@@ -9,6 +9,7 @@ def get_op(start=40):
         'format': 'mp4',
         'default_search': 'ytsearch',
         'quite': 'True',
+        'cookiefile': 'cookies.txt',
         'options': f'-vn -ss {start}'
     }
     return ytd_op
