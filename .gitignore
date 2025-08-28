@@ -1,7 +1,6 @@
 #configs
 config.dat
 cookies.txt
-Procfile
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
